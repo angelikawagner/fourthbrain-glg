@@ -1,5 +1,7 @@
 data
 dask-worker-space
+results/corpus
+results/dictionary
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
