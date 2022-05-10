@@ -2,6 +2,8 @@ data
 dask-worker-space
 results/corpus
 results/dictionary
+results/models
+*/wandb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
