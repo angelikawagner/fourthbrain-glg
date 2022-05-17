@@ -3,6 +3,7 @@ dask-worker-space
 results/corpus
 results/dictionary
 results/models
+results/inference
 */wandb
 
 # Byte-compiled / optimized / DLL files

@@ -82,9 +82,9 @@ def sample_by_topic(sample_file_name, topic_list, n_samples=0, nrows=None):
             'fashion', 'health/science', 'law', 'realestate', 'science',
             'science/technology', 'travel', 'worldnews']
     """
-    raw_path = Path("data/data_raw")
-    sample_path = Path("data/subsamples")
-    sample_path.mkdir(exist_ok=True)
+    raw_path = Path("../data/data_raw") # using .. for quick fix
+    sample_path = Path("../data/subsamples")
+    # sample_path.mkdir(exist_ok=True)
 
     # dtypes = {
     #     "Unnamed: 0": int,
@@ -125,7 +125,7 @@ def sample_by_topic(sample_file_name, topic_list, n_samples=0, nrows=None):
         df = df.copy()
 
     df = df.rename(columns={"Unnamed: 0": "article_id"})
-    df.to_csv(sample_path / f"{sample_file_name}.csv", index=False)
+    df.to_csv(f"{sample_path}/{sample_file_name}.csv", index=False)
 
 
 

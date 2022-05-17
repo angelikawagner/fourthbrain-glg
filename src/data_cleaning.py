@@ -41,26 +41,25 @@ def clean_df(df):
     return df
 
 
+def create_lemmas(text):
+    doc = nlp(text)
+    lemmatized = [
+        token.lemma_
+        for token in doc
+        if token.text not in en_stop
+            and len(token.text) >  1
+        ]
+    # remove new stopwords created by lemmatization
+    lemmatized = [
+        token
+        for token in lemmatized
+        if token not in en_stop
+            and len(token) > 1
+        ]
+    return lemmatized
+
+
 def lemmatize(df, nlp=nlp):
-    
-    def create_lemmas(text):
-        doc = nlp(text)
-        lemmatized = [
-            token.lemma_
-            for token in doc
-            if token.text not in en_stop
-                and len(token.text) >  1
-            ]
-        # remove new stopwords created by lemmatization
-        lemmatized = [
-            token
-            for token in lemmatized
-            if token not in en_stop
-                and len(token) > 1
-            ]
-        return lemmatized
-    
     df = df.copy()
     df["article"] = df["article"].map(create_lemmas)
-    
     return df
