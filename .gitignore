@@ -4,6 +4,7 @@ results/corpus
 results/dictionary
 results/models
 results/inference
+results/topics
 */wandb
 
 # Byte-compiled / optimized / DLL files
