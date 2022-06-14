@@ -15,11 +15,11 @@ The scripts in this repo are for model development. The repo for the web applica
 
 ## Overview
 
-We built a web application where the user can submit a question and gets matches to a subject-matter expert. The application sends the query to a REST API that parses the text and uses two machine learning algorithms to detect topics and keywords. It then displays the topic hierarchies, named entities, and subject-matter experts to the user.
+We built a web application where a user can submit a question and gets matched to a subject-matter expert. The application sends the query to a REST API that parses the text and uses two machine learning algorithms to detect topics and keywords. It then displays the topic hierarchies, [named entities](https://en.wikipedia.org/wiki/Named_entity), and subject-matter experts to the user.
 
 ## Background
 
-How can we organize thousands of requests quickly and automatically with little human intervention? This is the challenge [GLG](https://glginsights.com), the world's largest expert network, faces every day. GLG receives hundreds of requests per day from clients looking for subject-matter experts that can help answer questions on topics ranging from the airline industry’s ability to cope with COVID-19 to the zebra mussel infestations in North America. The goal is to quickly identify the topics and keywords in free-form text to match clients with a specialist in the database.
+How can we organize thousands of requests quickly and automatically with little human intervention? This is the challenge [GLG](https://glginsights.com), the world's largest expert network, faces every day. GLG receives hundreds of requests per day from clients looking for subject-matter experts that can help answer questions on topics ranging from the airline industry’s ability to cope with COVID-19 to the zebra mussel infestations in North America. The goal is to quickly identify topics and keywords in free-form text to connect clients with a specialist in GLG's database.
 
 ## Project goals
 - Detect hierarchical clusters of topics from client submitted requests
