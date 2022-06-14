@@ -1,6 +1,6 @@
 # FourthBrain Capstone: GLG Expert Finder
 
-The scripts in this repo are for model development. The repo for the web application can be found [here](ttps://github.com/exp-ouroborous/fourthbrain-capstone-ui).
+The scripts in this repo are for model development. The repo for the web application can be found [here](https://github.com/exp-ouroborous/fourthbrain-capstone-ui).
 
 ### Contributors
 - Angelika Wagner <angelika.wagner0220@gmail.com>
